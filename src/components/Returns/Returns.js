@@ -112,6 +112,7 @@ export function Returns() {
         <Image
           src={Chevron}
           alt="chevron"
+          width={"auto"}
           className="rotate-90 text-gray-dark-3"
         ></Image>
       </div>

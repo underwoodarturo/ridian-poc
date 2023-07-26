@@ -21,7 +21,7 @@ const Strategy = ({ strategy }) => (
       <div className="flex flex-col gap-2">
         <div className="flex flex-row gap-2 items-start">
           <span className="text-2 font-bold uppercase">{strategy.name}</span>{" "}
-          <Image src={Chevron} alt="Chevron" />
+          <Image src={Chevron} alt="Chevron" width={"auto"} height={"auto"} />
         </div>
         <p className="text-7 font-bold font-primary">${strategy.amount}</p>
       </div>

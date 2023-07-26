@@ -6,7 +6,6 @@ module.exports = {
       center: true,
     },
     screens: {
-      // xs: "300px",
       sm: "600px",
       md: "800px",
       lg: "1240px",
@@ -27,20 +26,6 @@ module.exports = {
             "dark-3": "#7600C7",
           },
         },
-        // scheme: {
-        //   purple: "#9900FF",
-        //   pink: "#F20D87",
-        //   blue: "#0D4AF2",
-        //   black: "#0D0C0D",
-        //   gray: "#817A85",
-        //   white: "#FCFCFD",
-        //   green: "#1FE072",
-        //   red: "#FF4C5E",
-        //   yellow: "#F6F66F",
-        //   cyan: "#0CF3E7",
-        //   gold: "#EDB545",
-        //   orange: "#FF7C2E",
-        // },
         secondary: {
           pink: {
             "light-3": "#F877B7",

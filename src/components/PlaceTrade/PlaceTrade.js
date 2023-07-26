@@ -66,11 +66,11 @@ export function PlaceTrade() {
     try {
       await trigger({ symbol: value });
     } catch (err) {
-      alert("Error calling the backend")
+      alert("Error calling the backend");
     }
   };
 
-  const handleChange = (e) => setValue(e.target.value);
+  const handleChange = (e) => setValue(e.target.value.toUpperCase());
 
   return (
     <div>
@@ -91,7 +91,7 @@ export function PlaceTrade() {
             className="w-full rounded-lg bg-gray-dark-12 p-5 text-center disabled:cursor-not-allowed disabled:text-gray-dark-4 flex justify-around relative"
           >
             <div className="flex flex-row w-1/2 justify-center align-middle items-center gap-2">
-              <Image alt="México" src={MX} width={25} height={25} />
+              <Image alt="México" src={MX} width={25} height={"auto"} />
               <span className="text-7 text-white font-primary self-end">
                 MXN
               </span>
@@ -114,14 +114,12 @@ export function PlaceTrade() {
               className="rounded-lg bg-gray-dark-12 text-center disabled:cursor-not-allowed disabled:text-gray-dark-4 w-1/2 text-7 focus:outline-none"
             />
             <span className="text-8 text-white w-1/2">
-              {value && iconMapper(value) ? (
-                <div className="flex justify-center align-middle items-center gap-2">
-                  <span>{Math.random()}</span>
+              <div className="flex justify-center align-middle items-center gap-2">
+                <span>0.064561006</span>
+                {iconMapper(value) && (
                   <CryptoconLogo icon={iconMapper(value)} />
-                </div>
-              ) : (
-                "-"
-              )}
+                )}
+              </div>
             </span>
           </div>
         </div>

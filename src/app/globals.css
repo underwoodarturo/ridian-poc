@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Ridian";
+  src: url("../fonts/RidianCubic-Regular.woff") format("opentype");
+}
+@font-face {
+  font-family: "Ridian";
+  font-weight: 700;
+  src: url("../fonts/RidianCubic-Bold.woff") format("opentype");
+}
+
+@font-face {
+    font-family: "Unica";
+    src: url("../fonts/Unica77LLWeb-Regular.woff") format("opentype");
+  }
+
+  @font-face {
+    font-family: "Unica";
+    font-weight: 700;
+    src: url("../fonts/Unica77LLWeb-Bold.woff") format("opentype");
+  }
+  
